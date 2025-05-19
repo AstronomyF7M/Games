@@ -1,0 +1,40 @@
+/* src/styles/arcade.css */
+body {
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+  color: #fff;
+  font-family: 'Orbitron', 'Audiowide', 'Arial', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.neon-text {
+  color: #39ff14;
+  text-shadow:
+    0 0 5px #39ff14,
+    0 0 10px #39ff14,
+    0 0 20px #39ff14,
+    0 0 40px #00fff0;
+  font-family: 'Orbitron', 'Audiowide', 'Arial', sans-serif;
+  letter-spacing: 2px;
+}
+.arcade-bg {
+  background: url('/assets/synthwave-bg.jpg') center/cover fixed;
+  min-height: 100vh;
+}
+.cabinet {
+  background: rgba(20,20,40,0.95);
+  border: 4px solid #00fff0;
+  border-radius: 18px;
+  box-shadow:
+    0 0 20px #00fff0,
+    0 0 60px #ff00de inset;
+  padding: 32px 16px;
+  margin: 32px;
+  display: inline-block;
+  transition: transform .2s;
+}
+.cabinet:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 0 60px #ff00de, 0 0 120px #39ff14 inset;
+}
+/* Add more glow and button styles as needed */
